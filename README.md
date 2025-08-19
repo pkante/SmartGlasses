@@ -103,6 +103,5 @@ Edit `arduino_camera.py` to adjust:
 
 ---
 
-That's it! You've got yourself a smart glasses system. Have fun experimenting with it! 🤓
 
 **Note**: Be mindful of privacy when using the camera and AI features.
