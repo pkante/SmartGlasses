@@ -1,0 +1,13 @@
+# Core dependencies for smart glasses system
+flask==3.0.0
+flask-cors==4.0.0
+google-generativeai==0.3.2
+python-dotenv==1.0.0
+pillow==10.1.0
+
+# Arduino communication
+pyserial==3.5
+
+# Web server and utilities
+watchdog==6.0.0
+requests==2.31.0
