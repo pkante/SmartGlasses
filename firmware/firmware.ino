@@ -75,8 +75,8 @@ void loop() {
 // #include "esp_http_server.h"
 
 // // ====== Wi-Fi (fill these) ======
-// const char* WIFI_SSID = "Related313";
-// const char* WIFI_PASS = "Starry313";
+// const char* WIFI_SSID = "";
+// const char* WIFI_PASS = "";
 
 // // ====== Camera pin map for XIAO ESP32S3 Sense ======
 // #define CAMERA_MODEL_XIAO_ESP32S3  // important: select this before including camera_pins.h
