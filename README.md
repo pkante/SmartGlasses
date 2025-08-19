@@ -1,6 +1,6 @@
 # Smart Glasses System
 
-A simple web-based smart glasses interface that captures images from an ESP32 camera and provides AI-powered image analysis and chat capabilities using Google's Gemini AI.
+A simple web-based smart glasses interface that captures images from an ESP32 camera and provides AI-powered image analysis and chat capabilities using Google's Gemini AI. I built this in 1 day, so it won't be hard to set up as well
 
 ## 🔧 Hardware Used
 
