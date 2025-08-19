@@ -17,21 +17,10 @@ A simple web-based smart glasses interface that captures images from an ESP32 ca
 - **📱 Responsive Design**: Works on desktop, tablet, and mobile devices
 - **⚡ Real-time Updates**: Auto-refreshing image gallery and live camera status
 
-## 🏗️ Architecture
 
 ```
-📦 Smart Glasses System
-├── 📸 arduino_camera.py     # ESP32 camera communication
-├── 🌐 app.py               # Flask web server
-├── 📁 templates/
-│   └── index.html          # Main web interface
-├── 📁 static/
-│   ├── css/style.css       # Custom styles
-│   └── js/app.js          # Frontend JavaScript
-└── 📁 captures/           # Captured images directory
-```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Environment Setup
 
@@ -102,7 +91,6 @@ Then open your browser to: **http://localhost:5000**
 - Ask specific questions about individual images
 - Get detailed descriptions of scenes, objects, and activities
 
-## 🔧 Configuration
 
 ### Camera Settings
 
@@ -111,101 +99,7 @@ Edit `arduino_camera.py` to adjust:
 - Baud rate (default: `115200`)
 - Capture interval (default: `10.0` seconds)
 
-### Web Server Settings
 
-Edit `app.py` to modify:
-- Server port (default: `5000`)
-- Host binding (default: `0.0.0.0`)
-- Image storage location
-
-## 📋 API Endpoints
-
-### Camera Control
-- `POST /api/camera/start` - Start continuous capture
-- `POST /api/camera/stop` - Stop capture
-- `POST /api/camera/capture` - Single capture
-- `GET /api/camera/status` - Camera status
-
-### Images
-- `GET /api/images` - List recent images
-- `GET /api/image/<filename>` - Serve image file
-- `POST /api/analyze/<filename>` - Analyze specific image
-
-### Chat
-- `POST /api/chat` - Send chat message
-- `GET /api/chat/history` - Get chat history
-
-## 🛠️ Development
-
-### Project Structure
-```
-📁 smart-glasses/
-├── arduino_camera.py      # ESP32 communication module
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── .env                   # Environment variables (create this)
-├── captures/             # Image storage (auto-created)
-├── templates/
-│   └── index.html        # Web interface template
-└── static/
-    ├── css/style.css     # Custom styles
-    └── js/app.js         # Frontend JavaScript
-```
-
-### Adding Features
-
-1. **New API Endpoints**: Add routes in `app.py`
-2. **Frontend Features**: Modify `templates/index.html` and `static/js/app.js`
-3. **Camera Features**: Extend `arduino_camera.py`
-4. **Styling**: Update `static/css/style.css`
-
-## 🔍 Troubleshooting
-
-### Camera Issues
-```bash
-# Check available ports (macOS)
-ls /dev/cu.*
-
-# Check available ports (Linux)
-ls /dev/ttyUSB*
-
-# Test camera connection
-python -c "from arduino_camera import ESP32Camera; cam = ESP32Camera(); print('Connected:' if cam.connect() else 'Failed')"
-```
-
-### Gemini API Issues
-- Verify your API key in `.env`
-- Check your Google Cloud billing is enabled
-- Ensure Gemini API is enabled in your project
-
-### Web Server Issues
-- Check if port 5000 is available
-- Try running with `python app.py --host 0.0.0.0 --port 8000`
-- Check firewall settings for local network access
-
-## 📊 Usage Examples
-
-### Smart Glasses Use Cases
-
-1. **Daily Life Assistant**
-   - "What am I looking at?"
-   - "Is this safe to eat?"
-   - "What's the weather outside based on what you see?"
-
-2. **Learning Aid**
-   - "Explain what's in this book page"
-   - "Help me identify this plant/animal"
-   - "What architectural style is this building?"
-
-3. **Navigation Help**
-   - "What street signs do you see?"
-   - "Describe the path ahead"
-   - "Are there any obstacles I should know about?"
-
-4. **Social Assistance**
-   - "Describe the people in this room"
-   - "What's happening in this scene?"
-   - "Help me read this text"
 
 ---
 
