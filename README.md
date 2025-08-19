@@ -1,4 +1,4 @@
-# Smart Glasses System
+# AI Powered Smart Glasses
 
 A simple web-based smart glasses interface that captures images from an ESP32 camera and provides AI-powered image analysis and chat capabilities using Google's Gemini AI. I built this in 1 day, so it won't be hard to set up as well
 
@@ -68,28 +68,6 @@ python app.py
 ```
 
 Then open your browser to: **http://localhost:5000**
-
-## 📱 Web Interface
-
-### Camera Controls
-- **Start/Stop Camera**: Begin continuous 10-second interval capture
-- **Capture Now**: Take a single image immediately
-- **Camera Status**: Real-time connection and capture status
-
-### Image Gallery
-- View all captured images in a responsive grid
-- Click any image to open detailed analysis modal
-- Auto-refreshes when camera is running
-
-### AI Chat
-- Ask questions about your captured images
-- Get contextual responses based on recent captures
-- Persistent chat history
-
-### Image Analysis
-- Click any image to analyze it with Gemini AI
-- Ask specific questions about individual images
-- Get detailed descriptions of scenes, objects, and activities
 
 
 ### Camera Settings
